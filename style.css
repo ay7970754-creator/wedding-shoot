@@ -258,7 +258,7 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url('assets/hero_bg.png');
+    background-image: url('hero_bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
