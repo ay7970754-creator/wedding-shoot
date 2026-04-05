@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Storytelling Studio | Luxury Wedding Photography</title>
+    <meta name="description" content="Premium, cinematic wedding photography and videography services.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- The magical fire particle canvas -->
+    <canvas id="fire-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Visual Storytelling</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Love Stories</a></li>
+            <li><a href="#pricing">Packages</a></li>
+            <li><a href="#contact" class="nav-btn">Book Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="glow-text">Eternal Magic</h1>
+            <p class="subtitle">Cinematic Wedding Photography & Videography</p>
+            <a href="#contact" class="btn btn-primary ripple-btn">Begin Your Journey</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to Explore</p>
+        </div>
+    </header>
+
+    <!-- Services Overview -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Expertise</h2>
+                <div class="divider"></div>
+                <p>Crafting memories that feel like a movie.</p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-card glass-card reveal">
+                    <div class="icon-glow">📷</div>
+                    <h3>Wedding Photography</h3>
+                    <p>High-resolution, deeply emotional stills that freeze your most precious moments in time forever.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.1s;">
+                    <div class="icon-glow">🎥</div>
+                    <h3>Cinematic Videography</h3>
+                    <p>4K cinematic films complete with drone footage, audio mastering, and Hollywood-grade color grading.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <div class="icon-glow">✨</div>
+                    <h3>Pre-Wedding Shoots</h3>
+                    <p>Tell your unique love story before the big day with conceptual out-of-the-box photoshoots.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.3s;">
+                    <div class="icon-glow">✈️</div>
+                    <h3>Destination Weddings</h3>
+                    <p>Wherever your love takes you, we travel the globe to capture your vows against breathtaking backdrops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Portfolio Showcase -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>The Art of Love</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="portfolio-gallery">
+                <div class="gallery-item reveal">
+                    <img src="assets/photo_1.png" alt="Luxury Wedding Rings Details">
+                    <div class="gallery-overlay">
+                        <h3>Detailed Elegance</h3>
+                        <p>The Finer Things</p>
+                    </div>
+                </div>
+                <!-- Additional gallery images can be dynamically added or duplicated -->
+                <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+                    <img src="assets/photo_2.png" alt="Destination Sunset Wedding">
+                    <div class="gallery-overlay">
+                        <h3>Golden Vows</h3>
+                        <p>Destination Magic</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" style="transition-delay: 0.2s;">
+                    <img src="assets/hero_bg.png" alt="Cinematic Church Wedding">
+                    <div class="gallery-overlay">
+                        <h3>Sacred Bonds</h3>
+                        <p>Grandeur & Emotion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Love Stories</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial-slider reveal">
+                <div class="testimonial-card glass-card">
+                    <div class="quote-mark">"</div>
+                    <p>"Visual Storytelling Studio didn't just take pictures; they captured the very soul of our wedding day. Watching our cinematic video feels like reliving a fairy tale every single time."</p>
+                    <h4>— Sophia & James</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section class="pricing section-padding" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Investment</h2>
+                <div class="divider"></div>
+                <p>Packages designed for your perfect day.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card reveal">
+                    <h3>The Storyteller</h3>
+                    <div class="price"><span>$</span>3,500</div>
+                    <ul>
+                        <li>8 Hours Photography</li>
+                        <li>High-Res Digital Gallery</li>
+                        <li>Engagement Session</li>
+                        <li>1 Photographer</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline ripple-btn">Inquire Now</a>
+                </div>
+                <div class="pricing-card glass-card premium-card reveal" style="transition-delay: 0.1s;">
+                    <div class="badge">Most Popular</div>
+                    <h3>The Cinematic</h3>
+                    <div class="price"><span>$</span>5,800</div>
+                    <ul>
+                        <li>10 Hours Photo & Video</li>
+                        <li>5-Minute Highlight Film</li>
+                        <li>Drone Footage</li>
+                        <li>Premium Album</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary ripple-btn">Inquire Now</a>
+                </div>
+                <div class="pricing-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <h3>The Masterpiece</h3>
+                    <div class="price"><span>$</span>8,500</div>
+                    <ul>
+                        <li>Unlimited Full Day Coverage</li>
+                        <li>10-Minute Feature Film</li>
+                        <li>Destination Travel Included</li>
+                        <li>Next-Day Teaser</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline ripple-btn">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-card reveal">
+                <div class="contact-info">
+                    <h2>Reserve Your Date</h2>
+                    <p>We take a limited number of weddings each year to ensure the highest quality experience for our couples. Let's create magic together.</p>
+                    <div class="contact-details">
+                        <p>📍 Worldwide Output</p>
+                        <p>✉️ hello@visualstory.studio</p>
+                        <p>📞 +1 (800) 123-4567</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" required placeholder=" ">
+                        <label for="date">Wedding Date</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Tell us about your dream wedding</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple-btn form-submit">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Visual Storytelling Studio</div>
+                <p>&copy; 2026 Visual Storytelling Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
